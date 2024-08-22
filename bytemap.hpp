@@ -28,6 +28,16 @@ namespace byteutils
             height = h;
         }
 
+        size_t get_width()
+        {
+            return width;
+        }
+
+        size_t get_height()
+        {
+            return height;
+        }
+
         bool load(std::string f_path)
         {
             if(does_file_exist(f_path))
